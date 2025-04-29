@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIS Seminar: Digital Transformation in Healthcare</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Orbitron:wght@700;900&display=swap" rel="stylesheet">
+    <style>
+        /* Apply custom fonts */
+        .font-orbitron {
+            font-family: 'Orbitron', sans-serif;
+        }
+        .font-montserrat {
+            font-family: 'Montserrat', sans-serif;
+        }
+        /* Custom gradient background */
+        body {
+            background: linear-gradient(135deg, #1e3a8a 0%, #4c1d95 50%, #047857 100%); /* Blue -> Purple -> Teal gradient */
+            display: flex;
+            flex-direction: column; /* Stack content and footer */
+            min-height: 100vh; /* Ensure body takes full height */
+        }
+        /* Center the main content */
+        .main-content {
+            flex-grow: 1; /* Allow main content to take available space */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem; /* Add padding around the content */
+        }
+        /* Add a subtle overlay for better text readability on the main banner */
+        .content-wrapper::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.4); /* Slightly darker overlay */
+            border-radius: 0.75rem; /* Match parent rounding */
+            z-index: 0;
+        }
+        /* Ensure content is above the overlay */
+        .content-wrapper > * {
+            position: relative;
+            z-index: 1;
+        }
+        /* Style for the objectives list */
+        .objectives-list li {
+            background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent black background for each item */
+            padding: 0.75rem;
+            margin-bottom: 0.5rem;
+            border-radius: 0.5rem; /* Rounded corners for list items */
+            border-left: 4px solid #facc15; /* Yellow accent border */
+        }
+         /* Style for the developer footer */
+        .developer-footer {
+            text-align: center;
+            padding: 1rem;
+            color: rgba(255, 255, 255, 0.7); /* Lighter text color for footer */
+            font-size: 0.875rem; /* Smaller font size */
+            margin-top: auto; /* Push footer to the bottom */
+        }
+    </style>
+</head>
+<body class="font-montserrat bg-gray-900">
+
+    <div class="main-content">
+        <div class="relative content-wrapper bg-white/10 backdrop-blur-md text-white rounded-xl shadow-2xl max-w-4xl w-full p-8 md:p-12 overflow-hidden">
+
+            <header class="mb-6 text-center">
+                <h1 class="font-orbitron text-2xl md:text-3xl font-bold tracking-wider text-cyan-300 uppercase">
+                    Expert Insights: Guest Speaker Session
+                </h1>
+            </header>
+
+            <hr class="border-cyan-400/50 my-6 md:my-8">
+
+            <section class="mb-6 text-center">
+                <h2 class="font-orbitron text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight text-yellow-300 drop-shadow-lg">
+                    Digital Transformation in Healthcare in Bangladesh
+                </h2>
+            </section>
+
+            <section class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 mb-6 md:mb-8 text-center md:text-left text-lg">
+                <div class="bg-black/30 p-4 rounded-lg shadow-md">
+                    <strong class="block text-cyan-300 mb-1">Date:</strong>
+                    <span>Tuesday, May 6, 2025</span>
+                </div>
+                <div class="bg-black/30 p-4 rounded-lg shadow-md">
+                    <strong class="block text-cyan-300 mb-1">Time:</strong>
+                    <span>1:30 PM - 3:00 PM</span>
+                </div>
+                <div class="bg-black/30 p-4 rounded-lg shadow-md">
+                    <strong class="block text-cyan-300 mb-1">Venue:</strong>
+                    <span>Lecture Gallery 126</span>
+                </div>
+            </section>
+
+            <hr class="border-cyan-400/50 my-6 md:my-8">
+
+            <section class="text-center mb-6 md:mb-8">
+                <h3 class="text-xl font-bold mb-2 text-yellow-300">Resource Person:</h3>
+                <p class="text-2xl font-bold mb-1">Mr. Parvez Ahmad</p>
+                <p class="text-lg text-cyan-200">Chief Operating Officer, CliniCall Limited, Dhaka.</p>
+            </section>
+
+            <hr class="border-cyan-400/50 my-6 md:my-8">
+
+            <section class="mb-6 md:mb-8">
+                <h3 class="text-xl font-bold mb-4 text-yellow-300 text-center">Guest Lecture Objectives:</h3>
+                <ul class="objectives-list space-y-3 text-base md:text-lg">
+                    <li><strong>Understand the Concept of Digital Transformation:</strong> Introduce what digital transformation means in the context of healthcare and how it differs from simple digitization.</li>
+                    <li><strong>Explore Key Technologies:</strong> Provide an overview of transformative technologies such as Electronic Health Records (EHRs), Artificial Intelligence (AI), Telemedicine, Internet of Medical Things (IoMT), Blockchain, and Big Data Analytics.</li>
+                    <li><strong>Share Real-World Applications:</strong> Share case studies or examples of how digital transformation is being successfully implemented in hospitals, clinics, and public health systems.</li>
+                    <li><strong>Identify Benefits and Challenges:</strong> Discuss the potential improvements in patient care, operational efficiency, and decision-making, as well as challenges like data privacy, security, and digital literacy.</li>
+                    <li><strong>Highlight Trends and Future Directions:</strong> Explore emerging trends such as personalized medicine, wearable health tech, virtual care models, and the role of AI in diagnostics and treatment planning.</li>
+                    <li><strong>Foster Interdisciplinary Collaboration:</strong> Emphasize the need for collaboration between healthcare professionals, IT specialists, data scientists, and policymakers for successful digital integration.</li>
+                </ul>
+            </section>
+
+        </div> </div> <footer class="developer-footer">
+        DEVELOPED BY ALISHANLABIB
+    </footer>
+
+</body>
+</html>
