@@ -75,7 +75,8 @@
         <div class="relative content-wrapper bg-white/10 backdrop-blur-md text-white rounded-xl shadow-2xl max-w-4xl w-full p-8 md:p-12 overflow-hidden">
 
             <div class="ewu-header text-center mb-4" data-aos="fade-down" data-aos-delay="100">
-                <img src="https://images.seeklogo.com/logo-png/35/1/east-west-university-ewu-logo-png_seeklogo-350606.png?v=1955335842753623352" alt="East West University Logo" class="h-16 mx-auto mb-2"> <h2 class="text-xl font-semibold text-white">East West University</h2>
+                <img src="https://images.seeklogo.com/logo-png/35/1/east-west-university-ewu-logo-png_seeklogo-350606.png?v=1955335842753623352" alt="East West University Logo" class="h-16 mx-auto mb-2" onerror="this.onerror=null; this.src='https://placehold.co/100x64/cccccc/ffffff?text=EWU+Logo';">
+                <h2 class="text-xl font-semibold text-white">East West University</h2>
             </div>
             <header class="mb-6 text-center" data-aos="fade-down" data-aos-delay="200">
                 <h1 class="font-orbitron text-2xl md:text-3xl font-bold tracking-wider text-cyan-300 uppercase">
@@ -94,8 +95,7 @@
             <section class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 mb-6 md:mb-8 text-center md:text-left text-lg">
                 <div class="bg-black/30 p-4 rounded-lg shadow-md" data-aos="fade-right" data-aos-delay="500">
                     <strong class="block text-cyan-300 mb-1">Date:</strong>
-                    <span>Tuesday, May 6, 2025</span>
-                </div>
+                    <span>Tuesday, May 6, 2025</span> </div>
                  <div class="bg-black/30 p-4 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="600">
                     <strong class="block text-cyan-300 mb-1">Time:</strong>
                     <span>1:30 PM - 3:00 PM</span>
@@ -103,7 +103,7 @@
                  <div class="bg-black/30 p-4 rounded-lg shadow-md" data-aos="fade-left" data-aos-delay="700">
                     <strong class="block text-cyan-300 mb-1">Venue:</strong>
                     <span> S. M. NOUSHER ALI
-                        (Lecture Gallery - 126)
+                        <br> (Lecture Gallery - 126)
                     </span>
                 </div>
             </section>
@@ -130,16 +130,15 @@
                 </ul>
             </section>
 
-        </div>
-    </div>
-    <footer class="developer-footer">
+        </div> </div> <footer class="developer-footer">
         DEVELOPED BY ALISHANLABIB
     </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
+      // Initialize AOS Animation Library
       AOS.init({
-        duration: 700, // values from 0 to 3000, with step 50ms
+        duration: 500, // *** Changed duration from 700 to 500 for faster animations ***
         easing: 'ease-out-cubic', // default easing for AOS animations
         once: true, // whether animation should happen only once - while scrolling down
         offset: 50, // offset (in px) from the original trigger point
