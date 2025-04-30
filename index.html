@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MIS Seminar: Digital Transformation in Healthcare - EWU</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Orbitron:wght@700;900&display=swap" rel="stylesheet">
@@ -22,6 +23,7 @@
             display: flex;
             flex-direction: column; /* Stack content and footer */
             min-height: 100vh; /* Ensure body takes full height */
+            overflow-x: hidden; /* Prevent horizontal scrollbar caused by some AOS animations */
         }
         /* Center the main content */
         .main-content {
@@ -64,6 +66,7 @@
             font-size: 0.875rem; /* Smaller font size */
             margin-top: auto; /* Push footer to the bottom */
         }
+
     </style>
 </head>
 <body class="font-montserrat bg-gray-900">
@@ -71,67 +74,77 @@
     <div class="main-content">
         <div class="relative content-wrapper bg-white/10 backdrop-blur-md text-white rounded-xl shadow-2xl max-w-4xl w-full p-8 md:p-12 overflow-hidden">
 
-            <div class="ewu-header text-center mb-4">
+            <div class="ewu-header text-center mb-4" data-aos="fade-down" data-aos-delay="100">
                 <img src="https://images.seeklogo.com/logo-png/35/1/east-west-university-ewu-logo-png_seeklogo-350606.png?v=1955335842753623352" alt="East West University Logo" class="h-16 mx-auto mb-2"> <h2 class="text-xl font-semibold text-white">East West University</h2>
             </div>
-            <header class="mb-6 text-center">
+            <header class="mb-6 text-center" data-aos="fade-down" data-aos-delay="200">
                 <h1 class="font-orbitron text-2xl md:text-3xl font-bold tracking-wider text-cyan-300 uppercase">
                     Guest Speaker Session
                 </h1>
             </header>
 
-            <hr class="border-cyan-400/50 my-6 md:my-8">
+            <hr class="border-cyan-400/50 my-6 md:my-8" data-aos="zoom-in" data-aos-delay="300">
 
-            <section class="mb-6 text-center">
+            <section class="mb-6 text-center" data-aos="zoom-in-up" data-aos-delay="400">
                 <h2 class="font-orbitron text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight text-yellow-300 drop-shadow-lg">
                     Digital Transformation in Healthcare in Bangladesh
                 </h2>
             </section>
 
             <section class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 mb-6 md:mb-8 text-center md:text-left text-lg">
-                <div class="bg-black/30 p-4 rounded-lg shadow-md">
+                <div class="bg-black/30 p-4 rounded-lg shadow-md" data-aos="fade-right" data-aos-delay="500">
                     <strong class="block text-cyan-300 mb-1">Date:</strong>
                     <span>Tuesday, May 6, 2025</span>
                 </div>
-                <div class="bg-black/30 p-4 rounded-lg shadow-md">
+                 <div class="bg-black/30 p-4 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="600">
                     <strong class="block text-cyan-300 mb-1">Time:</strong>
                     <span>1:30 PM - 3:00 PM</span>
                 </div>
-                <div class="bg-black/30 p-4 rounded-lg shadow-md">
+                 <div class="bg-black/30 p-4 rounded-lg shadow-md" data-aos="fade-left" data-aos-delay="700">
                     <strong class="block text-cyan-300 mb-1">Venue:</strong>
-                    <span> S. M. NOUSHER ALI 
+                    <span> S. M. NOUSHER ALI
                         (Lecture Gallery - 126)
                     </span>
                 </div>
             </section>
 
-            <hr class="border-cyan-400/50 my-6 md:my-8">
+            <hr class="border-cyan-400/50 my-6 md:my-8" data-aos="zoom-in" data-aos-delay="300">
 
-            <section class="text-center mb-6 md:mb-8">
+            <section class="text-center mb-6 md:mb-8" data-aos="fade-up" data-aos-delay="800">
                 <h3 class="text-xl font-bold mb-2 text-yellow-300">Resource Person:</h3>
                 <p class="text-2xl font-bold mb-1">Mr. Parvez Ahmad</p>
                 <p class="text-lg text-cyan-200">Chief Operating Officer, CliniCall Limited, Dhaka.</p>
             </section>
 
-            <hr class="border-cyan-400/50 my-6 md:my-8">
+            <hr class="border-cyan-400/50 my-6 md:my-8" data-aos="zoom-in" data-aos-delay="300">
 
             <section class="mb-6 md:mb-8">
-                <h3 class="text-xl font-bold mb-4 text-yellow-300 text-center">Guest Lecture Objectives:</h3>
+                 <h3 class="text-xl font-bold mb-4 text-yellow-300 text-center" data-aos="fade-up" data-aos-delay="900">Guest Lecture Objectives:</h3>
                 <ul class="objectives-list space-y-3 text-base md:text-lg">
-                    <li><strong>Understand the Concept of Digital Transformation:</strong> Introduce what digital transformation means in the context of healthcare and how it differs from simple digitization.</li>
-                    <li><strong>Explore Key Technologies:</strong> Provide an overview of transformative technologies such as Electronic Health Records (EHRs), Artificial Intelligence (AI), Telemedicine, Internet of Medical Things (IoMT), Blockchain, and Big Data Analytics.</li>
-                    <li><strong>Share Real-World Applications:</strong> Share case studies or examples of how digital transformation is being successfully implemented in hospitals, clinics, and public health systems.</li>
-                    <li><strong>Identify Benefits and Challenges:</strong> Discuss the potential improvements in patient care, operational efficiency, and decision-making, as well as challenges like data privacy, security, and digital literacy.</li>
-                    <li><strong>Highlight Trends and Future Directions:</strong> Explore emerging trends such as personalized medicine, wearable health tech, virtual care models, and the role of AI in diagnostics and treatment planning.</li>
-                    <li><strong>Foster Interdisciplinary Collaboration:</strong> Emphasize the need for collaboration between healthcare professionals, IT specialists, data scientists, and policymakers for successful digital integration.</li>
+                    <li data-aos="fade-up" data-aos-delay="1000"><strong>Understand the Concept of Digital Transformation:</strong> Introduce what digital transformation means in the context of healthcare and how it differs from simple digitization.</li>
+                    <li data-aos="fade-up" data-aos-delay="1050"><strong>Explore Key Technologies:</strong> Provide an overview of transformative technologies such as Electronic Health Records (EHRs), Artificial Intelligence (AI), Telemedicine, Internet of Medical Things (IoMT), Blockchain, and Big Data Analytics.</li>
+                    <li data-aos="fade-up" data-aos-delay="1100"><strong>Share Real-World Applications:</strong> Share case studies or examples of how digital transformation is being successfully implemented in hospitals, clinics, and public health systems.</li>
+                    <li data-aos="fade-up" data-aos-delay="1150"><strong>Identify Benefits and Challenges:</strong> Discuss the potential improvements in patient care, operational efficiency, and decision-making, as well as challenges like data privacy, security, and digital literacy.</li>
+                    <li data-aos="fade-up" data-aos-delay="1200"><strong>Highlight Trends and Future Directions:</strong> Explore emerging trends such as personalized medicine, wearable health tech, virtual care models, and the role of AI in diagnostics and treatment planning.</li>
+                    <li data-aos="fade-up" data-aos-delay="1250"><strong>Foster Interdisciplinary Collaboration:</strong> Emphasize the need for collaboration between healthcare professionals, IT specialists, data scientists, and policymakers for successful digital integration.</li>
                 </ul>
             </section>
 
-        </div> 
-    </div> 
+        </div>
+    </div>
     <footer class="developer-footer">
         DEVELOPED BY ALISHANLABIB
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 700, // values from 0 to 3000, with step 50ms
+        easing: 'ease-out-cubic', // default easing for AOS animations
+        once: true, // whether animation should happen only once - while scrolling down
+        offset: 50, // offset (in px) from the original trigger point
+      });
+    </script>
 
 </body>
 </html>
